@@ -1,1 +1,19 @@
 package.json is a configuration for npm
+
+There are two types of dependencies which our app can have
+1. dev dependencies
+2. normal dependencies
+
+difference between caret and tilde in package.json
+
+package-lock.json:
+keeps track of exact version of package that was installed
+
+transitive dependencies:
+example: parcel is what we install.
+it can have some dependencies. Those dependencies will have their own dependencies
+those dependencies can have their own dependencies
+This is called transitive dependencies
+
+if we have package.json and package-lock.json,
+we can recreate node_modules
