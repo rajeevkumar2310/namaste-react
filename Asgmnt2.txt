@@ -1,0 +1,97 @@
+What is npm?
+NPM is a package manager. It is not an abbreviation for Node package manager.
+
+What is parcel/Webpack?
+Parcel and webpack are npm packages which do a lot of things like
+Dev Build
+Local server
+HMR: Hot Module Replacement
+File watching algorithm -- written in C++
+Caching - Faster Builds
+Image optimization
+Minification
+Bundling
+Compression
+Consistent Hashing
+Code Splitting
+Differential Bundling - to support older browsers
+Diagnostics
+Good Error Handling
+Https
+Tree Shaking - removes unused code
+Different build for Dev and Production
+
+
+what is .parcel-cache?
+parcel-cache is where parcel package caches our app into binary files from which rebuilds can happen efficiently.
+
+what is npx?
+npx is used to execute a package.
+example: npx parcel index.html
+
+what are the differences between dependencies and devDependencies?
+Dev dependencies are for development environments and dependencies are for production environments.
+
+what is Treeshaking?
+Treeshaking is something that our bundler package like parcel does which 
+shakes off the unused code in our app. So it is called tree shaking.
+
+What is HMR?
+As you make changes to your code, Parcel automatically rebuilds the changed files 
+and updates your app in the browser. By default, Parcel fully reloads the page,
+but in some cases it may perform Hot Module Replacement (HMR). HMR improves the development 
+experience by updating modules in the browser at runtime without needing a whole page refresh. 
+This means that application state can be retained as you change small things in your code.
+When we change code, and save it, it immediately reflects in our webpage. This is HMR.
+
+List Super powers of parcel.
+Dev Build
+Local server
+HMR: Hot Module Replacement
+File watching algorithm -- written in C++
+Caching - Faster Builds
+Image optimization
+Minification
+Bundling
+Compression
+Consistent Hashing
+Code Splitting
+Differential Bundling - to support older browsers
+Diagnostics
+Good Error Handling
+Https
+Tree Shaking - removes unused code
+Different build for Dev and Production
+
+what is .gitignore? What should we add and not add into it?
+.gitignore is a file where we add file names that are not required/recreatable.
+If the document or file is recreatable, it is not required for such document to push to git hub.
+So we include its name to gitignore. files listed in .gitignore are ignored and not pushed to git hub.
+Files that are needed by the app and are not recreatable should be pushed to git hub. Such files 
+should not be added to .gitignore.
+
+
+what is the difference between package.json and package-lock.json?
+Package.json contains dependencies and devDependencies approximate versions/ version ranges.
+Package-lock.json contains exact versions of the dependencies/devDependencies along with Hash value
+so that same package is available in both development and production.
+
+Why should I not modify package-lock.json?
+we should not modify package-lock.json because it contains exact versions of the dependencies/devDependencies
+along with Hash value that maintains consistency among various environments.
+
+what is the dist folder?
+Dist folder is generated once we run npx parcel build index.html and 
+contains production build files. This folder is recreatable.
+The "dist" folder typically contains the following:
+
+Minified and optimized JavaScript files.
+Minified and optimized CSS files.
+Any static assets like images or fonts that your application uses.
+An HTML file (usually "index.html") that serves as the entry point to your application.
+
+What is browserlists?
+browserslist is a configuration file or setting used by various front-end tools, 
+including Babel and Autoprefixer, to specify the list of target browsers and their versions
+that your project should support. This configuration helps these tools determine how to transpile
+and prefix CSS and JavaScript code to ensure compatibility with the specified browsers.

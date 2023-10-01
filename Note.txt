@@ -17,3 +17,15 @@ This is called transitive dependencies
 
 if we have package.json and package-lock.json,
 we can recreate node_modules
+
+
+just like we have npm, we have something called npx
+npx means executing a package
+npm is for installing a package.
+
+npm intall parcel
+npx parcel index.html
+
+
+cdn links is not a preferred way to bring react into our app
+

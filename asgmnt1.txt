@@ -1,0 +1,53 @@
+What is Emmet?
+Emmet is a built in feature in VS code which takes 
+abbreviations and short expressions and gives out code snippets based on whats passed.
+
+Difference between Library and Framework?
+Library is a small piece of code or a document which contains code which is used to create 
+a small functionality or large functionality, small or large apps.
+Library is small and has narrow scope.
+Whereas Framework is a large chunk of code with various interlinked 
+documents which is used to create small or large apps. Because a framework is itself an application, it has a wider scope 
+and includes almost everything necessary to make a user application as per his own needs.
+
+What is CDN? Why do we use it?
+ CDN is Content Delivery Network. It is where our resources are 
+ cached in various interconnected servers located at various locations in the world.
+ When we require a resouce from CDN, when we make a call, 
+ the resource is fetched from the server located near to us
+
+
+Why is React known as React?
+React is called React because of its ability to react or 
+respond dynamically to changes in the data
+
+What is cross-origin in the script tag?
+whenever cross-origin is there in the script tag, our webpage/domain can 
+make requests to resource in another domain and can access that resource.
+For ex: we have FAcebook page and there is a video to be rendered from youtube. 
+Facebook can make CORS - Cross origin resource sharing  ON 
+and can access the resource from youtube and the video will be played in our FB page.
+
+
+What is the difference between React and ReactDOM?
+React is a JS library for building user interfaces. 
+React DOM is for interacting with the DOM or for DOM Manipulations
+
+what is the difference between React.development.js and React.production.js via cdn?
+React.development.js is developer friendly is giving out 
+detailed error messages and warnings compared to react.production.js.
+React.production.js is optimized version with less detailed error and improved runtime performance.
+
+What are async and defer?
+Async and defer are boolean attributes used in Script tag to load the external scripts to your page.
+when we load a webpage to our browser, there are two things happening in the page. 
+One is HTML parsing and another is loading of scripts. loading of scripts contains to parts.
+One is fetching of script from network and the other is executing the script line by line.
+
+When we keep async is true, the scripts are downloaded asynchronously and parallelly 
+with HTML parsing and download is complete, HTML parsing is  stopped and the script is executed then and there. 
+After scripts are executed, HTML parsing continues.
+
+When we keep defer is true, HTML parsing goes on and parallelly scripts are downloaded. Then scripts are 
+deferred till HTML parsing is complete and then Scripts are executed.
+
